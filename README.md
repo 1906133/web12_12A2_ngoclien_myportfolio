@@ -19,3 +19,15 @@ Viết báo cáo + README
 ├── main.js
 ├── /img
 ├── README.md
+ách chạy dự án
+1. Chạy website trên máy cá nhân (Local Run)
+Tải repo hoặc clone bằng lệnh:
+git clone <URL-repo-của-bạn>
+Mở thư mục dự án.
+Mở file:
+index.html
+Website sẽ chạy trực tiếp trên trình duyệt (Chrome / Safari / Edge).
+Không cần cài đặt thêm vì dự án dùng HTML/CSS/JS thuần + CDN Bootstrap.
+2. Chạy website online qua GitHub Pages (Deploy)
+Nếu muốn chạy bản online:
+Vercel: https://web12-12-a2-lien-myportfolio-duj4.vercel.app/
