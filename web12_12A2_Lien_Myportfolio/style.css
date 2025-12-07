@@ -1,0 +1,549 @@
+/* -------------------------
+   RESET + GLOBAL
+------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fdf7f4;
+    color: #5b4a45;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* -------------------------
+   HEADER
+------------------------- */
+.header {
+    position: sticky;
+    top: 0;
+    background: #fdf7f4e8;
+    backdrop-filter: blur(12px);
+    padding: 18px 0;
+    border-bottom: 1px solid #f0e1dc;
+    z-index: 20;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #d18c84;
+}
+
+.logo span {
+    color: #b8736a;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #6d5c57;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #d18c84;
+}
+
+/* -------------------------
+   HERO SECTION
+------------------------- */
+.hero {
+    padding: 100px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text .hello {
+    color: #d18c84;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.hero-text h1 {
+    font-size: 54px;
+    color: #5b4a45;
+}
+
+.hero-text h1 span {
+    color: #d18c84;
+}
+
+.hero-text h2 {
+    color: #7a6762;
+    margin: 10px 0 20px;
+    font-size: 22px;
+}
+
+.desc {
+    max-width: 420px;
+    margin-bottom: 25px;
+    color: #7c6a63;
+}
+
+.btn-main {
+    padding: 14px 26px;
+    background: #e8c9c1;
+    color: #5b4a45;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 6px 14px rgba(224, 170, 160, 0.3);
+}
+
+.btn-main:hover {
+    background: #dcb6ad;
+}
+
+/* PHOTO */
+.circle {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(145deg, #f7e9e5, #f3d8d2);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 8px 18px rgba(214, 164, 154, 0.4);
+}
+
+/* -------------------------
+   PROJECTS
+------------------------- */
+.projects {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 34px;
+    color: #d18c84;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* CARD chỉnh lại theo yêu cầu */
+.card {
+    background: #fff;
+    border-radius: 180px;
+    padding: 20px;
+    border: 1px solid #f1e1db;
+    text-align: center; 
+    transition: 0.3s;
+    box-shadow: 0 4px 14px rgba(224, 170, 160, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px; 
+}
+
+/* Card hover */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(214, 158, 148, 0.25);
+}
+
+/* Hình card */
+.card-img {
+    width: 100%;
+    height: 200px;  
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    object-fit: cover; /* giữ tỉ lệ, không méo */
+    display: block;
+}
+
+/* Tiêu đề h3 */
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d18c84;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Nội dung p */
+.card p {
+    font-size: 14px;
+    color: #7c6a63;
+    text-align: justify; /* căn đều 2 bên */
+    flex-grow: 1; /* giãn hết chiều cao còn lại */
+    margin-bottom: 12px;
+}
+
+/* Nút More */
+.more-btn {
+    margin-top: auto; /* luôn ở dưới */
+    display: inline-block;
+    padding: 8px 14px;
+    color: #5b4a45;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.more-btn:hover {
+    transform: translateY(-2px);
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 74, 69, 0.4);
+}
+
+/* -------------------------
+   CONTACT
+------------------------- */
+.contact {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #f1e1db;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #e7d3ce;
+    background: #fefaf9;
+}
+
+.contact-form button {
+    padding: 14px;
+    background: #e8c9c1;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #5b4a45;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #dab3ab;
+}
+
+/* RIGHT INFO BOX */
+.contact-info {
+    background: #fff;
+    border: 1px solid #f1e1db;
+    padding: 25px;
+    border-radius: 18px;
+    color: #5b4a45;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #7c6a63;
+}
+
+/* -------------------------
+   FULL WIDTH MAP
+------------------------- */
+.map-section {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+.footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #8a7a75;
+    font-size: 14px;
+}
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+@media (max-width: 768px) {
+    /* Hero section */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Contact grid */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Hero text */
+    .hero-text h1 {
+        font-size: 40px; /* Giảm kích thước chữ cho vừa với màn hình nhỏ */
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    /* Navbar */
+    .nav a {
+        font-size: 14px; /* Giảm kích thước chữ */
+        margin-left: 15px;
+    }
+
+    .nav_more a {
+        font-size: 14px;
+    }
+
+    /* Card layout */
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 cột trên thiết bị di động */
+    }
+
+    /* Contact form */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Thêm không gian xung quanh cho trường nhập */
+    }
+
+    .contact-form button {
+        padding: 12px;
+    }
+
+    /* Map */
+    .map iframe {
+        height: 250px; /* Giảm chiều cao của bản đồ trên thiết bị di động */
+    }
+
+    /* Footer Icons */
+    .footer_icon i {
+        font-size: 24px;
+    }
+
+    /* Adjust moon icon */
+    #moon-icon {
+        font-size: 22px;
+    }
+}
+
+
+/* BUTTON */
+.more-btn {
+    margin-top: 12px;
+    display: inline-block;
+    padding: 8px 14px;         
+    color: #5b4a45;
+    border-radius: 6px;        
+    font-size: 14px;           
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s;
+    box-shadow: none;          
+}
+
+.more-btn:hover {
+    transform: translateY(-2px); 
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 74, 69, 0.4);
+}
+
+.nav_more {
+    position: relative; 
+    display: inline-block;
+}
+
+.nav_more a {
+    text-decoration: none;
+    color: #5b4a45;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.nav_more i {
+    margin-left: 5px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #fdf7f4e8;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 10;
+    flex-direction: column; 
+}
+
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #5b4a45;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1e1dc;
+    color: #d18c84;
+}
+.dropdown-content.show {
+    display: flex; 
+    flex-direction: column;
+}
+
+/* NIGHTMODE */
+body.night-mode {
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+}
+
+body.night-mode .header {
+    background: #2a2a40;
+}
+
+body.night-mode .card {
+    background: #2f2f4a;
+    color: #e0e0e0;
+}
+
+body.night-mode .btn-main {
+    background: #444464;
+    color: #e0e0e0;
+}
+/* MAP */
+.map iframe {
+    border-radius: 18px; 
+    border: 0; 
+}
+
+/* FOOTERICON */
+.footer_icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;      
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.footer_icon i {
+    font-size: 28px;  
+    color: #5b4a45;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer_icon i:hover {
+    color: #d18c84;  
+    transform: scale(1.2); 
+}
+
+/* ACHIEVEMENTS */
+.achievements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.achievements-table th, .achievements-table td {
+    border: 1px solid #f1e1db;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.achievements-table th {
+    background-color: #d18c84;
+    color: white;
+    font-weight: 700;
+}
+
+.achievements-table tbody tr:nth-child(even) {
+    background-color: #fdf7f4;
+}
+
+.achievements-table tbody tr:hover {
+    background-color: #e8c9c1;
+    color: #5b4a45;
+}
+/* MOON */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+}
+
+.nav-moon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #6d5c57;
+    transition: 0.3s;
+}
+
+.nav-moon:hover {
+    color: #d18c84;
+    transform: scale(1.15);
+}
+
+
+
+
+
+

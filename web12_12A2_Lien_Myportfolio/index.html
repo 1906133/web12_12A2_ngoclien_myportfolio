@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ngọc Liên Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6b727cafbd.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+    <!-- HEADER -->
+        <header class="header">
+            <div class="container nav-flex">
+
+                <!-- LOGO -->
+                <div class="logo">Liên <span>Portfolio</span></div>
+
+                <nav class="nav">
+                    <a href="#carouselExampleCaptions">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#projects">Activities</a>
+                    <a href="#contact">Contact</a>
+                    <!-- DROPDOWN -->
+                    <div class="nav_more" id="moreDropdown">
+                        <a href="javascript:void(0)" id="moreBtn">More <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content" id="moreMenu">
+                            <a href="#sports">Sports</a>
+                            <a href="#achievements">Achievements</a>
+                        </div>
+                    </div>    
+                    <i id="moon-icon" class="fa-solid fa-moon"></i>                
+                </nav>
+            </div>
+        </header>
+
+    <!-- CAROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://thedragontrip.com/wp-content/uploads/2019/09/AdobeStock_151235300.jpeg" class="d-block w-100" alt="Korea">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Busan, Korea</h5>
+                <p>Xứ sở kim chi là nơi nhịp sống hiện đại hòa cùng hơi thở truyền thống, tạo nên một bản giao hưởng rực rỡ của công nghệ, nghệ thuật và ẩm thực.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/5438e2c6e4b0b18459a8ca06/1575045004859-XUYABWM4BZZFNPC7MRRZ/GTJ-2019-0923-80.jpg" class="d-block w-100" alt="taiwan">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Taipei, Taiwan</h5>
+                <p>Hòn đảo xinh đẹp giữa Thái Bình Dương khoác lên mình vẻ phồn hoa trẻ trung nhưng vẫn giữ trọn nét tinh tế Á Đông đầy cuốn hút.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.newscientist.com/wp-content/uploads/2023/06/22150608/halong-bay-vietnam-marina-lobato-kg7poxbbfns-unsplash-scaled.jpg?crop=9%3A5%2Csmart" class="d-block w-100" alt="vietnam">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Viet Nam</h5>
+                <p>Vùng đất hình chữ S tựa dải lụa mềm ôm lấy biển trời Đông Nam Á, mang trong mình sự dịu dàng của thiên nhiên và chiều sâu văn hóa ngàn năm.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    <!-- ABOUT ME -->
+        <section class="hero" id="about">
+            <div class="container hero-grid">
+
+                <!-- LEFT-->
+                <div class="hero-text">
+                    <p class="hello">Xin chào, tôi là</p>
+                    <h1>NGỌC <span>LIÊN</span></h1>
+                    <h2>Học sinh lớp 12 <i class="fa-regular fa-star"></i></h2>
+
+                    <p class="desc">
+                        Tôi luôn mang trong tim niềm háo hức trước những chân trời mới, bởi với tôi, mỗi nơi đặt chân đến không chỉ là một điểm dừng mà còn là một câu chuyện đang chờ được mở ra — nơi từng làn gió, từng góc phố và từng ánh mắt xa lạ đều thì thầm những bài học riêng biệt. Tôi tin rằng hành trình khám phá thế giới cũng chính là hành trình khám phá chính mình: càng đi nhiều, càng thấy lòng rộng mở; càng trải nghiệm, càng thấu hiểu vẻ đẹp phong phú và diệu kỳ của cuộc sống.
+                    </p>
+
+                    <a href="#projects" class="btn-main">My activities</a>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="circle">
+                    <img src="./img/lien.jpeg" alt="Ngọc Liên">
+                </div>
+
+            </div>
+        </section>
+
+    <!-- PROJECTS -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title"><i class="fa-solid fa-plane"></i> Extracurricular Activities</h2>
+
+                <div class="project-grid">
+
+                    <!-- 8 PROJECT CARDS -->
+                    <div class="card">
+                        <div class="card-img img1">
+                            <img src="./img/opos.jpeg">
+                        </div>
+                        <h3>One Place One Story</h3>
+                        <p>Hoàn thành khóa huấn luyện, dạy tiếng Anh, hướng dẫn học sinh trình bày và biểu diễn dự án cuối chương trình.</p>
+                        <a href="https://www.facebook.com/share/1BCA7kU3Z2/?mibextid=wwXIfr" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img2">
+                            <img src="./img/etc2.jpeg">
+                        </div>
+                        <h3>English Teaching Camp</h3>
+                        <p>Quản lý 11 tình nguyện viên, tổ chức chương trình tiếng Anh 14 ngày, giúp học sinh viết sách cá nhân kết hợp văn hóa.</p>
+                        <a href="https://www.instagram.com/etc.lsts?igsh=d2h6ODl1MHM4aXVi" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img3">
+                            <img src="./img/gl2.JPG">
+                        </div>
+                        <h3>Global Forum</h3>
+                        <p>Đại diện Việt Nam thảo luận kinh tế, nghiên cứu công nghệ, biểu diễn áo dài, trải nghiệm homestay và workshop quốc tế.</p>
+                        <a href="https://lsts.edu.vn/?start=0&length=3&serial=23-45" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img4">
+                            <img src="./img/ayf.PNG">
+                        </div>
+                        <h3>Asian Youth Forum</h3>
+                        <p>Trưởng nhóm Treasure Hunt, tổ chức hoạt động văn hóa tương tác, kết nối quốc tế, quản lý sự kiện cho 100+ đại biểu.</p>
+                        <a href="https://lsts.edu.vn/?start=0&length=3&serial=23-45" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img5">
+                            <img src="./img/pacamara.jpg">
+                        </div>
+                        <h3>Sơn Pacarama</h3>
+                        <p>Nghiên cứu thị trường cà phê đặc sản, phân tích hành vi người tiêu dùng, đánh giá tiềm năng sản phẩm và lập kế hoạch ra mắt.</p>
+                        <a href="https://sonpacamara.com/?srsltid=AfmBOoooju9to5qyfrnpwHVEUDTsiOy7LO8vHupucEvjgnjzDo0R5LJC" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img6">
+                            <img src="./img/culture.JPEG">
+                        </div>
+                        <h3>Cultural Exchange Program</h3>
+                        <p>Tổ chức sự kiện, đón tiếp học sinh quốc tế, điều phối hoạt động, thúc đẩy hợp tác văn hóa, đảm bảo chương trình thành công.</p>
+                        <a href="https://lsts.edu.vn/?start=0&length=3&serial=23-45" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img7">
+                            <img src="./img/team.PNG">
+                        </div>
+                        <h3>Ambassador Club</h3>
+                        <p>Lãnh đạo đội tổ chức tour song ngữ, đào tạo thành viên, quản lý truyền thông, nâng cao hình ảnh câu lạc bộ với đối tác quốc tế.</p>
+                        <a href="https://www.instagram.com/ambassador.lsts?igsh=MTlxNnN0amkwYWN0MA==" class="more-btn">More Details</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img img8">
+                            <img src="./img/frc.jpeg">
+                        </div>
+                        <h3>Family Representative Council</h3>
+                        <p>Lãnh đạo hội đồng 32 đại diện, khảo sát ý kiến học sinh, phân tích dữ liệu, báo cáo, quản lý truyền thông và tăng tương tác.*</p>
+                        <a href="https://www.instagram.com/frc.lsts?igsh=MXNpc2ViaDRoYXQ4bg==" class="more-btn">More Details</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+        <h2 class="section-title"><i class="fa-solid fa-trophy"></i></i> Achievements</h2>
+        <div class="container">
+            <table class="achievements-table">
+                <thead>
+                    <tr>
+                        <th>Năm</th>
+                        <th>Hoạt động / Giải thưởng</th>
+                        <th>Vị trí / Thành tích</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023</td>
+                        <td>Global Forum</td>
+                        <td>Đại diện Việt Nam</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>One Place One Story</td>
+                        <td>Tutor</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>English Teaching Camp</td>
+                        <td>Vice-head</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+    <!-- CONTACT -->
+        <h2 class="section-title"><i class="fa-solid fa-address-book"></i>Contact</h2>
+        <section class="contact" id="contact">
+            <div class="container contact-grid">
+
+                <!-- FORM -->
+                <form class="contact-form" id="contactForm">
+                    <h3>Liên hệ với tôi</h3>
+
+                    <input type="text" placeholder="Tên của bạn">
+                    <input type="email" placeholder="Email của bạn">
+                    <textarea rows="5" placeholder="Tin nhắn của bạn"></textarea>
+
+                    <button type="submit">Gửi</button>
+                </form>
+
+                <!-- MAP --> 
+                <div class="map"> 
+                    <iframe width="100%" 
+                    height="100%" 
+                    frameborder="0"
+                    style="border:0;" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.910950410254!2d105.8133309!3d21.0362376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab72be2a0cbd%3A0x3234cf24d90228e3!2zSG_DoG5nIE1haSwgSG_DoG5nIFRyw6wsIEjDoCBO4buvbmcsIFZpZXRuYW0!5e0!3m2!1svi!2s!4v1700000000000" 
+                    allowfullscreen=""> 
+                    </iframe> 
+                </div>
+
+            </div>
+        </section>
+
+    <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer_icon">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.snapchat.com" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>            
+            <p>© 2025 Hoàng Nguyễn Ngọc Liên. </p>
+        </footer>
+    </body>
+</html>
